@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página com múltiplos GIFs</title>
     <style>
-        /* Definindo o estilo para cobrir toda a página com múltiplos GIFs */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('rola2.gif');  /* Caminho do GIF */
-            background-size: 10%;  /* Ajusta o tamanho do GIF para se ajustar ao tamanho da tela */
-            background-repeat: repeat;  /* Faz os GIFs se repetirem até cobrir toda a tela */
+        .gif {
+            width: 20%;  /* Ajusta o tamanho dos GIFs (20% da largura da tela) */
+            height: 20vh; /* Ajusta a altura dos GIFs (20% da altura da tela) */
+            background-image: url('rola2.gif');
+            background-size: cover;  /* Faz o GIF cobrir a área do elemento */
+            background-position: center; /* Centraliza o GIF dentro do elemento */
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
+    <!-- Adiciona vários divs para exibir os GIFs -->
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <div class="gif"></div>
+    <!-- Continue adicionando mais divs conforme necessário para cobrir a tela -->
 </body>
 </html>
